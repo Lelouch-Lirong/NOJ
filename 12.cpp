@@ -25,7 +25,7 @@ void solution::output(){
             cout<<i<<'+';
         }
         cout << n + (this->num/2)*2 << endl;
-    }else{
+    }else{                      //为偶数
         int left, right;
         left = n-1 - ((this->num)/2-1)*2;
         right = n+1 + ((this->num)/2-1)*2;
