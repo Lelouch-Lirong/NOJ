@@ -25,5 +25,3 @@ int main()
     cout<<get_Num(a, b, c)<<endl;
     return 0;
 }
-
-
