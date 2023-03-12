@@ -26,5 +26,6 @@ int main()
         cin>>input[i];
     }
     output(n, input);
+    free(input);
     return 0;
 }
