@@ -1,11 +1,9 @@
-/*
+
 #include<iostream>
 #include<cstdio>
 using namespace std;
 
-/*¿ìÅÅ
-*/
-/*
+
 void quicksort(int *data, int left, int right){
 
     if(left >= right)   return;
@@ -50,4 +48,3 @@ int main()
     }
     return 0;
 }
-*/
