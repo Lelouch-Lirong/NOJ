@@ -1,4 +1,3 @@
-/*
 #include<iostream>
 #include<cmath>
 #include<cstdio>
@@ -32,4 +31,3 @@ int main()
         function(a, b, c);
     }
 }
-*/
