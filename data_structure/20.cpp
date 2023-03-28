@@ -8,16 +8,16 @@ using namespace std;
 
 bool visit[MAX]={false};
 queue<int> Q;
-class map{
+class Grap{
     private:
         int m, n;            //n:顶点数  m：边数
         int vi[MAX];        //顶点信息
         int ver[MAX][2];    //边的信息
     public:
-        map();
+        Grap();
         bool BFS(int vj);
 };
-map::map(){
+Grap::Grap(){
     cin>>n>>m;
     for(int i = 0; i < n; i++){
         cin>>vi[i];
@@ -26,7 +26,7 @@ map::map(){
         cin>>ver[i][0]>>ver[i][1];
     }
 }
-bool map::BFS(int vj){
+bool Grap::BFS(int vj){
     int vi = Q.front();
     Q.pop();
     visit[vi] = true;
@@ -48,7 +48,7 @@ bool map::BFS(int vj){
 
 int main()
 {
-    map M;
+    Grap M;
     int vi, vj;
     cin>>vi>>vj;
     Q.push(vi);
