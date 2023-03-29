@@ -1,0 +1,34 @@
+0001 /*
+0002 源程序添加行号
+0003 */
+0004 #include<cstdio>
+0005 #include<iostream>
+0006 using namespace std;
+0007 
+0008 int main()
+0009 {
+0010     FILE *fp_r, *fp_w;
+0011     int no = 1;
+0012     char buf[1024];
+0013 
+0014     fp_r = fopen("DATA5612.CPP", "r");
+0015     if(!fp_r){
+0016         cout<<"1:open the file fail"<<endl;
+0017         return 1;
+0018     } 
+0019 
+0020     fp_w = fopen("DATA5612.CPP", "w");
+0021     if(!fp_w){
+0022         cout<<"2:open the file fail"<<endl;
+0023         return 1;
+0024     } 
+0025 
+0026     while(fgets(buf, 1024, fp_r) != NULL){
+0027         cout<<no<<endl;
+0028         fprintf(fp_w, "%04d %s\n", no++, buf);
+0029     }
+0030     cout<<no<<endl;
+0031     fclose(fp_r);
+0032     fclose(fp_w);
+0033     return 0;
+0034 }
